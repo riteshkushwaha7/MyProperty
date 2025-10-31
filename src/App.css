@@ -1,0 +1,81 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Layout styles for property app */
+#app-root { max-width: 1200px; margin: 0 auto; padding: 2rem; color: inherit }
+.top { text-align: left; margin-bottom: 1rem }
+.controls { display:flex; gap:1rem; align-items:center; margin-bottom:1rem }
+.controls .search { flex:1 }
+.controls input { width:100%; padding:0.6rem; border-radius:8px; border:1px solid #333 }
+.controls select { padding:0.5rem }
+.layout { display:flex; gap:2rem }
+.list { flex:2 }
+.aside { flex:1; min-width:280px }
+.grid { display:grid; grid-template-columns: repeat(auto-fill,minmax(240px,1fr)); gap:1rem }
+
+.property-card { background: rgba(255,255,255,0.03); border-radius:8px; overflow:hidden; text-align:left; display:flex; flex-direction:column; height:100% }
+.property-card img { width:100%; height:150px; object-fit:cover }
+.property-card .card-body { padding:0.8rem; display:flex; flex-direction:column; gap:0.5rem; flex:1 }
+.property-card h3 { margin:0 }
+.muted { color: #9aa; font-size:0.9rem }
+.price { font-weight:700; color: #8fe0a6 }
+.desc { color: #ccc; font-size:0.95rem }
+.card-actions { margin-top:auto; display:flex; gap:0.5rem }
+
+.property-form { background: rgba(255,255,255,0.03); padding:1rem; border-radius:8px; display:flex; flex-direction:column; gap:0.5rem }
+.property-form input, .property-form select, .property-form textarea { padding:0.5rem; border-radius:6px; border:1px solid #333 }
+.property-form button { margin-top:0.5rem }
+
+.modal-backdrop { position:fixed; inset:0; background:rgba(0,0,0,0.5); display:flex; align-items:center; justify-content:center; z-index:1000 }
+.modal { width:90%; max-width:720px; background:var(--bg,#111); border-radius:10px; overflow:hidden }
+.modal header { display:flex; justify-content:space-between; align-items:center; padding:0.8rem 1rem; border-bottom:1px solid rgba(255,255,255,0.03) }
+.modal .modal-image { width:100%; height:320px; object-fit:cover }
+.modal-body { padding:1rem }
+.modal .close { background:transparent; border:0; font-size:1.2rem }
+
+.error { color: #ff7b7b }
+
+@media (max-width: 800px) {
+  .layout { flex-direction:column }
+  .aside { order:2 }
+}

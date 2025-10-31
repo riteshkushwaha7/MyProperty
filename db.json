@@ -1,0 +1,34 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Ashrya Apartment",
+      "type": "Apartment",
+      "location": "Bhopal, MP",
+      "price": 320000,
+      "description": "A bright apartment close to public transport with great city views.",
+      "image": "/assets/ashrya-apartment.svg",
+      "coords": { "lat": 23.2599, "lng": 77.4126 }
+    },
+    {
+      "id": 2,
+      "name": "Cozy Cottage",
+      "type": "House",
+      "location": "Indore, MP",
+      "price": 210000,
+      "description": "Charming cottage with a backyard and nearby parks.",
+      "image": "/assets/cozy-cottage.svg",
+      "coords": { "lat": 22.7196, "lng": 75.8577 }
+    },
+    {
+      "id": 3,
+      "name": "Loft Bed Manufacturers",
+      "type": "Loft",
+      "location": "Gwalior, MP",
+      "price": 450000,
+      "description": "Open-plan loft in the heart of the city.",
+      "image": "/assets/loft-bed.svg",
+      "coords": { "lat": 26.2183, "lng": 78.1828 }
+    }
+  ]
+}
